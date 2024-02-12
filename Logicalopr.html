@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes</title>
+  </head>
+  <script>
+    let Country = prompt("Which Country are you from?");
+    Country = Country.toLowerCase();
+    Country = Country.trim();
+    Country = Country.replace("brasil", "brazil");
+    if (Country === "brazil" || Country === "portugal") {
+      alert("You speak Portuguese");
+    } else {
+      alert("You don't speak Portuguese");
+    }
+  </script>
+  <body></body>
+</html>

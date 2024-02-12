@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swahili Dishes</title>
+    <style>
+      h1 {
+        text-align: justify;
+        color: brown;
+        font-size: 20px;
+      }
+      body {
+        background-color: rgb(244, 255, 255);
+        border-style: groove;
+        max-width: 850px;
+        margin-left: 200px;
+      }
+
+      button {
+        display: block;
+        margin: 15px auto;
+        background: rgb(22, 172, 122);
+        color: white;
+        font-size: 16px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      footer {
+        font-family: monospace;
+        font-size: 16px;
+        font-style: italic;
+        color: brown;
+        font-weight: bold;
+        text-align: center;
+      }
+      .Navigation {
+        overflow: hidden;
+        background-color: brown;
+      }
+
+      .Navigation a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .Navigation a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .Navigation a.active {
+        background-color: #04aa6d;
+        color: white;
+      }
+      .Channel {
+        color: brown;
+        margin: 0 auto;
+        font-weight: bold;
+      }
+      span {
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+      }
+      .Contacts {
+        display: table;
+        margin: 20px auto;
+      }
+      li:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      li {
+        transition: all 200ms ease-in-out;
+        padding: 4px;
+        list-style: square;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Navigation">
+      <a class="active" href="final_Project.html">Home</a>
+      <a href="Contacts.html">Contact</a>
+      <a href="About.html">About</a>
+    </div>
+    <h1>To try our products Contacts Us Through;</h1>
+    <ul>
+      <li>
+        <span class="Channel">Email: </span><span>hello@Swahilidishes.com</span>
+      </li>
+      <li>
+        <span class="Channel">Instagram: </span><span>@Swahilidishes.com</span>
+      </li>
+      <li>
+        <span class="Channel">Instagram: </span><span>@Swahilidishes.com</span>
+      </li>
+    </ul>
+    <button type="button">Leave Your Comment</button>
+    <footer>Code By Cmwai</footer>
+    <script>
+      function getFeedback() {
+        let firstname = prompt("What is your firstname?");
+        firstname = firstname.toUpperCase();
+        let comment = prompt("Please enter yor comment");
+        let customerFeedback = document.querySelector("h1");
+        customerFeedback.innerHTML =
+          "👋 " +
+          firstname +
+          ", Thank you for you feedback we shall keep it private and confidential.";
+        customerFeedback.style.backgroundColor = "#04aa6d";
+        customerFeedback.style.color = "white";
+      }
+      let customer = document.querySelector("button");
+      customer.addEventListener("click", getFeedback);
+    </script>
+  </body>
+</html>
